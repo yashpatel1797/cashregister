@@ -17,12 +17,16 @@ function checkCash(){
     let cashInputValue = Number(cashInput.value);
     const amountTobeGiven = cashInputValue - amountInputValue;
     if(amountInputValue > 0 && cashInputValue > 0){
-        if(amountInputValue <= cashInputValue){
+        if(amountInputValue < cashInputValue){
             changeTable.style.display="block";
             
             calculateChange(amountTobeGiven);
             
-        } else {
+        } else if(amountInputValue === cashInputValue) {
+            showMessage("No change to return");
+            changeTable.style.display="none";
+        }
+        else {
             showMessage("Please wash dish!");
             changeTable.style.display="none";
         }
