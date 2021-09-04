@@ -11,7 +11,6 @@ const coins = [2000, 500, 100, 20, 10, 5, 1];
 details.style.display="none";
 changeTable.style.display="none";
 
-
 function checkCash(){
     message.style.display="none";
     let amountInputValue = Number(amountInput.value);

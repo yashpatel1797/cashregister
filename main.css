@@ -11,17 +11,21 @@ nav {
     background-color: aqua;
     padding: 1.5rem 3rem;
     font-size: 3rem;
+    margin: auto;
 }
 .container{
     display:flex;
     flex-direction: column;
     font-size: 2rem;
-    width: 50rem;
+    width: 50%;
     align-items: center;
     margin: auto;
     padding: 1rem;
     
     
+}
+input{
+    text-align: center;
 }
 .details{
     display:flex;
@@ -48,7 +52,6 @@ button{
     font-weight: bold;
     font-size: large;
 }
-
 .change-table{
     background-color: aqua;
     color: white;
@@ -67,4 +70,9 @@ caption{
 
 .no-of-coins {
     background-color: aqua;
+}
+@media only screen and (max-width: 991px){
+    table{
+        font-size: 0.7rem;
+    }
 }
